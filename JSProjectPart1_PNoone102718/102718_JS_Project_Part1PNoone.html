@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head><title>102718 JavaScript Project - PART 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* pnoone  */
+
+
+img {
+width:200px;
+height:200px;
+
+}
+      
+#img2{
+        position: fixed;
+        right:0px;
+        bottom:0;
+      }
+
+#img4{
+        position: fixed;
+        right:225px;
+        bottom:0;
+      }
+
+#img6{
+        position: fixed;
+        right:450px;
+        bottom:0;
+      }
+
+#img8{
+        position: fixed;
+        right:675px;
+        bottom:0;
+      }
+
+#img10{
+        position: fixed;
+        right:900px;
+        bottom:0;
+      }
+
+#img12{
+        position: fixed;
+        right:1125px;
+        bottom:0;
+      }
+
+    </style>
+
+
+  </head>
+  
+  <body>
+	<img id="img1" src="images/img1.jpg" alt="" />
+	<img id="img2" src="images/img2.jpg" alt="" />
+	<img id="img3" src="images/img3.jpg" alt="" />
+	<img id="img4" src="images/img4.jpg" alt="" />
+	<img id="img5" src="images/img5.jpg" alt="" />
+	<img id="img6" src="images/img6.jpg" alt="" />
+	<img id="img7" src="images/img7.jpg" alt="" />
+	<img id="img8" src="images/img8.jpg" alt="" />
+	<img id="img9" src="images/img9.jpg" alt="" />
+	<img id="img10" src="images/img10.jpg" alt="" />
+	<img id="img11" src="images/img11.jpg" alt="" />
+	<img id="img12" src="images/img12.jpg" alt="" />
+
+    <p><br>
+    <em>Click on image in top row provides another image at the bottom from right to left margin.
+<br/>JavaScript needs to be enabled.</em></p>
+    
+    <script>
+
+//instruction to swap image
+      
+var img1 = document.getElementById("img1"),
+          img2 = document.getElementById("img2");
+
+var img3 = document.getElementById("img3"),
+          img4 = document.getElementById("img4");
+
+var img5 = document.getElementById("img5"),
+          img6 = document.getElementById("img6");
+
+var img7 = document.getElementById("img7"),
+          img8 = document.getElementById("img8");
+
+var img9 = document.getElementById("img9"),
+          img10 = document.getElementById("img10");
+
+var img11 = document.getElementById("img11"),
+          img12 = document.getElementById("img12");
+          
+
+// hover over cursor 
+      
+img1.style.cursor = "pointer"; // no pointer if javascript is disabled (nothing to click)
+      img2.style.display = "none"; // hide when page is loaded 
+
+img3.style.cursor = "pointer";
+      img4.style.display = "none"; 
+
+img5.style.cursor = "pointer";
+      img6.style.display = "none"; 
+
+img7.style.cursor = "pointer";
+      img8.style.display = "none"; 
+
+img9.style.cursor = "pointer";
+      img10.style.display = "none"; 
+
+img11.style.cursor = "pointer";
+      img12.style.display = "none"; 
+
+
+
+// click on image function
+      
+img1.onclick = function(){
+        if (img2.style.display == "none"){
+        	img2.style.display = "block";
+        }
+        else {
+        	img2.style.display = "none";
+        }
+      }
+
+img3.onclick = function(){
+        if (img4.style.display == "none"){
+        	img4.style.display = "block";
+        }
+        else {
+        	img4.style.display = "none";
+        }
+      }
+
+img5.onclick = function(){
+        if (img6.style.display == "none"){
+        	img6.style.display = "block";
+        }
+        else {
+        	img6.style.display = "none";
+        }
+      }
+
+img7.onclick = function(){
+        if (img8.style.display == "none"){
+        	img8.style.display = "block";
+        }
+        else {
+        	img8.style.display = "none";
+        }
+      }
+
+
+img9.onclick = function(){
+        if (img10.style.display == "none"){
+        	img10.style.display = "block";
+        }
+        else {
+        	img10.style.display = "none";
+        }
+      }
+
+img11.onclick = function(){
+        if (img12.style.display == "none"){
+        	img12.style.display = "block";
+        }
+        else {
+        	img12.style.display = "none";
+        }
+      }
+
+    </script>
+  </body>
+</html>
